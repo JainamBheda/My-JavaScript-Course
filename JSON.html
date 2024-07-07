@@ -1,0 +1,37 @@
+<!-- it is Javascript Object notation  -->
+<!-- commonly used for transmission data in web application -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">hello myself jainam</div>
+    <script>
+
+        //we will create Object for JSON
+        let Jsonobj={
+            name:"jainam Bheda",
+            Sex:"Male",
+            Weight:"85 Kgs",
+            Height:"5.9 ft"
+        }
+        console.log(Jsonobj); 
+
+        //we will convert Jsonobj into String to apply replace,repeat functions
+        let Jsonstr=JSON.stringify(Jsonobj);
+        console.log(Jsonstr);
+
+        //apply replace function 
+        Jsonstr.replace('Jainam Bheda','Jayesh vyas');
+        console.log(Jsonstr);
+
+        //again convert into obj
+        let newJsonobj=JSON.parse(Jsonstr); //note:parse(valid string);
+        console.log(newJsonobj);
+    </script>
+</body>
+</html>

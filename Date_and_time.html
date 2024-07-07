@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+    <style>
+        .container{
+            background-color: black;
+            font-size: 30px;
+            color: green;
+            padding: 30px 30px;
+            border:3px solid whitesmoke;
+            border-radius: 20px;
+            display: flex;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            margin: 45%;
+
+        }
+        body{
+            background-color: rgb(239, 225, 95);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">current time is <span id="time"></span></div> 
+
+   <script>
+        console.log("this is date and time")
+        // let now=new Date();
+        // console.log(now);
+        // let newdate=new date(year,month,date,hours,minutes,seconds,miliseconds);
+        // let newdate=new Date(2025,12,1,15,20,.59,1);
+        // console.log(newdate);
+
+        // let yr=newdate.getFullYear();
+        // console.log(yr);
+
+        // let dt=newdate.getDay();
+        // console.log(dt);
+
+        // let y=Date.now();
+        // console.log(y);
+        // newdate.setDate(13);
+        // console.log(newdate);
+        setInterval(updatetime,1000);
+        function updatetime(){
+            time.innerHTML=new Date();
+
+        }
+
+        
+   </script>
+</body>
+</html>

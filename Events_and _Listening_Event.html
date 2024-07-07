@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="head">Jainam Bheda</h1>
+        <p id="para1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid odit repudiandae exercitationem accusamus perferendis, natus itaque repellat voluptates est ipsum doloribus saepe repellendus nobis fuga aut quidem, cumque impedit qui maiores reprehenderit debitis pariatur neque vitae autem? Molestiae ipsa distinctio dignissimos iste ullam.
+        </p>
+        <button id="btn" onclick="bheda()">
+            click to show/hide
+        </button>
+
+    </div>
+
+<script>
+    let head=document.getElementById('head');
+    head.addEventListener('mouseover',function jainam(){
+        alert("sexy");
+
+    });
+    function bheda(){
+        let para1=document.getElementById('para1');
+        let btn=document.getElementById('btn');
+        if(para1.style.display!='none'){
+            para1.style.display='none';
+        }
+        else{
+            para1.style.display='block';
+        }
+    }
+</script>
+</body>
+</html>

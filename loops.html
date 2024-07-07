@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //for loop
+        for(let i=0;i<3;i++){
+            console.log(i);
+        }
+
+        //for loop in modern JS
+        let number=[1,2,3,4,5];
+        number.forEach(function f(elements){
+            console.log(elements)
+        })
+
+        //for in method
+        let employee={
+            name:"jainam",
+            age:18,
+            salary:10000
+        }
+        for(key in employee){
+            console.log(` the $(key) of employee is $(element[key])`)
+        }
+    </script>
+</body>
+</html>

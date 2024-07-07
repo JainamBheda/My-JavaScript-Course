@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container"><h1>
+        my name is jainam bheda
+    </h1></div>
+
+    <script>
+        // "=>" this is called Arrow Function and used to make functions example 
+        greet=()=>{
+            alert("beware of coders");
+        }
+        greet();
+
+        setTimeout(()=>{
+            alert("hello");
+        },3000);
+
+        //shortcut ka bhi Shortcut agar function mai return hoga toh 
+        let sum=(a,b)=>a+b;
+
+        //bracket ke bina bhi chaljayega
+        let half=a=>a/2;
+
+        let obj1={
+            greeting:"good mmorenin",
+            name:["jainam","bheda","tirth","harry"],
+            speak(){
+                this.name.forEach( students=> {
+                    console.log(this.geeting+"sax sux"+ students);
+                });
+            }
+
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>
